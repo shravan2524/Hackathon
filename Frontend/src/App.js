@@ -14,6 +14,7 @@ export default function App() {
   return (
     <>
       <Router>
+        {/* history.push */}
           <Route exact path="/" component={Maindashboard} />
           <Route exact path="/signup">
             <SIgnup />
