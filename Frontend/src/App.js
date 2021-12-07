@@ -12,7 +12,7 @@ import Maindashboard from './Components/Maindashboard';
 import MainProductsPage from './Components/Khyati/MainProductsPage';
 export default function App() {
   return (
-    <>
+    <div className="container">
       <Router>
         {/* history.push */}
           <Route exact path="/" component={Maindashboard} />
@@ -23,6 +23,6 @@ export default function App() {
             <MainProductsPage />
           </Route>
       </Router>
-    </>
+      </div>
   )
 }
