@@ -27,27 +27,33 @@
   font-family: FontAwesome, "Roboto", sans-serif;
   outline: 0;
   background: #f1c06f;
-  width: 100%;
+  width: 50% !important;
   border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
+  margin: 0 0 5px !important;
+  padding: 6px !important;
   box-sizing: border-box;
-  font-size: 14px;
-border-radius:10px;
+  font-size: 12px !important;
+border-radius:6px !important;
   
+}
+.form a {
+  font-family: FontAwesome, "Roboto", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  color: #1a1a1a;
 }
 .form button {
   font-family: "Titillium Web", sans-serif;
-  font-size: 14px;
+  font-size: 12px !important;
   font-weight: bold;
-  letter-spacing: .1em;
+  letter-spacing: .1em !important;
   outline: 0;
   background: #fea91e;
-  width: 100%;
+  width: 30% ! important;
   border: 0;
-border-radius:30px;
-  margin: 0px 0px 8px;
-  padding: 15px;
+border-radius:15px !important;
+  margin: 0px 0px 3px !important;
+  padding: 6px !important;
   color: #FFFFFF;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -58,19 +64,19 @@ border-radius:30px;
 }
 .form button:hover,.form button:focus {
   background: #000000;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
   transform: translateY(-4px);
 }
 .form button:active {
   transform: translateY(2px);
-  box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
 }
 
 .form .message {
   
-  margin: 6px 6px;
+  margin: 3px 3px !important;
   color: #808080;
-  font-size: 11px;
+  font-size: 3px !important;
   text-align: center;
   font-weight: bold;
   font-style: normal;
@@ -81,7 +87,7 @@ border-radius:30px;
 .form .message a {
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 10px !important;
 }
 .form .register-form {
   display: none;

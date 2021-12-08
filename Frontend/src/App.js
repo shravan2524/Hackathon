@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Login from './Components/Login';
 import SIgnup from './Components/SIgnup';
-import Forget from './Components/Forget';
+import Forgot from './Components/Forgot';
 import Maindashboard from './Components/Maindashboard';
 import MainProductsPage from './Components/Khyati/MainProductsPage';
 import ProductDs from './Components/Aniket/ProductDs';
@@ -22,6 +22,9 @@ export default function App() {
           </Route>
           <Route exact path="/Login">
             <Login />
+          </Route>
+          <Route exact path="/Forgot">
+            <Forgot/>
           </Route>
           <Route exact path="/mainproducts">
             <MainProductsPage />

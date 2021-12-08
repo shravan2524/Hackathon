@@ -6,7 +6,7 @@
   background-size: cover;
 }*/
 
-.login-page {
+.forgot-page {
   width: 360px;
   padding: 60% 0 0;
   margin: auto;
@@ -16,38 +16,38 @@
   position: relative;
   z-index: 1;
   background: #4a4b4b;
-  max-width: 200% !important;
+  max-width: 360px;
   margin: 0 auto 100px;
-  padding: 60px;
+  padding: 45px;
   text-align: center;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24) !important;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   
 }
 .form input {
   font-family: FontAwesome, "Roboto", sans-serif;
   outline: 0;
   background: #f1c06f;
-  width: 60% !important;
+  width: 65% !important;
   border: 0;
   margin: 0 0 6px !important;
-  padding: 8px !important;
+  padding: 6px !important;
   box-sizing: border-box;
-  font-size: 14px;
-border-radius:10px;
+  font-size: 12px !important;
+border-radius:6px !important;
   
 }
 .form button {
   font-family: "Titillium Web", sans-serif;
-  font-size: 9px !important;
+  font-size: 12px !important;
   font-weight: bold;
-  letter-spacing: .1em;
+  letter-spacing: .005em !important;
   outline: 0;
   background: #fea91e;
-  width: 50% !important;
+  width: 50% ! important;
   border: 0;
-border: radius 10px !important; 
+border-radius:15px !important;
   margin: 0px 0px 3px !important;
-  padding: 10px !important;
+  padding: 8px !important;
   color: #FFFFFF;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -63,14 +63,14 @@ border: radius 10px !important;
 }
 .form button:active {
   transform: translateY(2px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
 }
 
 .form .message {
   
   margin: 3px 3px !important;
   color: #808080;
-  font-size: 10px !important;
+  font-size: 3px !important;
   text-align: center;
   font-weight: bold;
   font-style: normal;
@@ -81,7 +81,7 @@ border: radius 10px !important;
 .form .message a {
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 10px !important;
 }
 .form .register-form {
   display: none;
@@ -89,21 +89,21 @@ border: radius 10px !important;
 .container {
   position: relative;
   z-index: 1;
-  max-width: 200px !important;
-  margin: auto;
+  max-width: 300px;
+  margin: 0 auto !important;
 }
 .container:before, .container:after {
   content: "";
-  display: box;
+  display: block;
   clear: both;
 }
 .container .info {
-  margin: auto;
+  margin: 50px auto;
   text-align: center;
 }
 .container .info h1 {
-  margin: auto;
-  padding: 10px;
+  margin: 0 0 15px;
+  padding: 0;
   font-size: 36px;
   font-weight: 300;
   color: #1a1a1a;
@@ -130,8 +130,8 @@ body {
   -moz-osx-font-smoothing: grayscale;*/     
 }
 .containerMain{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 
 }
