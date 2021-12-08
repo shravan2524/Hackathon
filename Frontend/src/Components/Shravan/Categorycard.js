@@ -11,14 +11,6 @@ export default function Categorycard(props) {
     function onPress(){
         console.log(data);
         history.push("/category");
-        // // history.push({
-        // //     pathname: '/category',
-        // //     state: { detail: 'some_value' }
-        // // });
-        // <Link to={{
-        //     pathname: '/category',
-        //     state: { detail: "ihijijkna" }
-        //   }}> <MainProductsPage/>  </Link>
     }
     return (
         <div className="catergorycard-container" onClick={onPress}>
