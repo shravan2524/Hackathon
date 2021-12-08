@@ -1,5 +1,6 @@
 import React from 'react'
-import Carousel from './Shravan/Carousel'
+import { Carousel } from 'react-responsive-carousel';
+import Carous from './Shravan/Carous';
 import Categorycard from './Shravan/Categorycard';
 
 export default function Maindashboard() {
@@ -269,8 +270,8 @@ export default function Maindashboard() {
     return (
         <>
             <div style={{ width: "90%" }}>
-                <div>
-                    <Carousel />
+                <div style={{height:"20rem"}}  >
+                    <Carous />
                 </div>
                 <div style={{ marginBottom: "1rem" }}>
                     <span style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
