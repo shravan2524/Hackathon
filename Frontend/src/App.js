@@ -10,6 +10,7 @@ import SIgnup from './Components/SIgnup';
 import Forget from './Components/Forget';
 import Maindashboard from './Components/Maindashboard';
 import MainProductsPage from './Components/Khyati/MainProductsPage';
+import Wishlist from './Components/Khyati/WishlistPage';
 export default function App() {
   return (
     <div className="container">
@@ -21,6 +22,9 @@ export default function App() {
           </Route>
           <Route exact path="/mainproducts">
             <MainProductsPage />
+          </Route>
+          <Route exact path="/Wishlist">
+            <Wishlist />
           </Route>
       </Router>
       </div>
