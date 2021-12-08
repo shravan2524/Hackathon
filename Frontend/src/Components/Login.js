@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Login.css"
-import { CgProfile} from 'react-icons/cg';
+// import { CgProfile} from 'react-icons/cg';
 
 export default function Login() {
     // function show(){
@@ -26,7 +26,7 @@ export default function Login() {
                 {/* <lottie-player src="https://assets4.lottiefiles.com/datafiles/XRVoUu3IX4sGWtiC3MPpFnJvZNq7lVWDCa8LSqgS/profile.json" background="transparent" speed="1" style="justify-content: center;" loop autoplay></lottie-player> */}
                 <input type="text" placeholder=" Email Id" />
                 <input type="password" id="password" placeholder="  password" />
-                {<CgProfile />}
+                {/* {<CgProfile />} */}
                 <br />
                 <br />
                 <button>LOGIN</button>

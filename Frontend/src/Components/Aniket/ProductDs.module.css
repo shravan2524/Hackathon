@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #222222;
+	color: white;
+	position: relative;
+    font-family: 'Lato';
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 6rem;
+}
+
+.main-container img{
+    /* width: 20rem; */
+    height: 20rem;
+}
+
+.details-container{
+    width: 40%;
+    margin: auto 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.details-container hr{
+    width: 100%;
+}
+
+.content-container{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container span{
+    color: #B12704;
+    font-size: 1.3rem;
+}
+
+.basic-details{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.basic-details li{
+    margin: .3rem 0;
+}
+
+
+.content-container th,td{
+    text-align: left;
+    padding: .2rem;
+}
+
+.description{
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button.buy{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 100px;
+    background-color: #FF9900;
+    font-size: 1rem;
+}
+
+button.addtocart{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 100px;
+    background-color: #f5ce00;
+    font-size: 1rem;
+}
