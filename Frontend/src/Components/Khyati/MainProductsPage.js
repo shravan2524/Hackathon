@@ -1,7 +1,9 @@
 import React from 'react';
 import "./Product.css"
 
-export default function MainProductsPage() {
+export default function MainProductsPage(props) {
+    const {data} = props;
+    console.log("category_products, ", props.detail);
     const products_mobile = [
         {
             product_id : 'M1',

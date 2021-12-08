@@ -14,12 +14,11 @@ export default function App() {
   return (
     <div className="container">
       <Router>
-        {/* history.push */}
-          <Route exact path="/" component={Maindashboard} />
+          <Route exact path="/home" component={Maindashboard} />
           <Route exact path="/signup">
             <SIgnup />
           </Route>
-          <Route exact path="/mainproducts">
+          <Route exact path="/category">
             <MainProductsPage />
           </Route>
       </Router>
