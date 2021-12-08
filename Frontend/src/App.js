@@ -11,6 +11,7 @@ import SIgnup from './Components/SIgnup';
 import Forget from './Components/Forget';
 import Maindashboard from './Components/Maindashboard';
 import MainProductsPage from './Components/Khyati/MainProductsPage';
+import Wishlist from './Components/Khyati/WishlistPage';
 import ProductDs from './Components/Aniket/ProductDs';
 export default function App() {
   return (
@@ -25,6 +26,9 @@ export default function App() {
           </Route>
           <Route exact path="/category">
             <MainProductsPage />
+          </Route>
+          <Route exact path="/Wishlist">
+            <Wishlist />
           </Route>
           <Route exact path='/productdescription'>
             <ProductDs />       
