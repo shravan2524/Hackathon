@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ProductDs.module.css";
-import ReactStars from "react-rating-stars-component";
+// import ReactStars from "react-rating-stars-component";
 
 const ProductDs = () => {
   return (
@@ -8,7 +8,7 @@ const ProductDs = () => {
       <img src="./images/Mobile_21.png" alt="" />
       <div className={styles["details-container"]}>
         <h2>Apple iPhone 11</h2>
-        <ReactStars count={5} size={24} activeColor="#ffd700" />
+        {/* <ReactStars count={5} size={24} activeColor="#ffd700" /> */}
         <hr />
         <div className={styles["content-container"]}>
           <div>Price: <span>47,900</span></div>
