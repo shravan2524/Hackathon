@@ -9,7 +9,7 @@ const MainHeader = (props) => {
       <nav className={styles['main-nav']}>
           <ul className={styles['nav-list']}>
               <li className={styles['nav-list_item']}><a href="/"><img src='/images/Account_icon.png' alt="Account" /></a></li>
-              <li className={styles['nav-list_item']}><a href="/"><img src='/images/heart.png' alt="Whishlist" /></a></li>
+              <li className={styles['nav-list_item']}><a href="/wishlist"><img src='/images/heart.png' alt="Whishlist" /></a></li>
               <li className={styles['nav-list_item']}><a href="/"><img src='/images/cart.png' alt="Cart" /></a></li>
           </ul>
       </nav>

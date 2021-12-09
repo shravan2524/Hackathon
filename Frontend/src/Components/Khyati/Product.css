@@ -23,7 +23,7 @@ body {
 	margin: 50px 0;
 }
 .card{
-	background-color: none !important;
+	background: none !important;
 }
 .main_content {
 	margin-top: 3rem;

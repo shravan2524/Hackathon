@@ -17,8 +17,9 @@ import MainHeader from './Components/Aniket/MainHeader';
 export default function App() {
   return (
     <div className="container">
+      <MainHeader />
       <Router>
-          <Route exact path="/home" component={Maindashboard} />
+          <Route exact path="/" component={Maindashboard} />
           <Route exact path="/signup">
             <SIgnup />
           </Route>
