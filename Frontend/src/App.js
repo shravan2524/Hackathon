@@ -13,6 +13,7 @@ import Maindashboard from './Components/Maindashboard';
 import MainProductsPage from './Components/Khyati/MainProductsPage';
 import Wishlist from './Components/Khyati/WishlistPage';
 import ProductDs from './Components/Aniket/ProductDs';
+import MainHeader from './Components/Aniket/MainHeader';
 export default function App() {
   return (
     <div className="container">
@@ -31,7 +32,7 @@ export default function App() {
             <Wishlist />
           </Route>
           <Route exact path='/productdescription'>
-            <ProductDs />       
+            <ProductDs />
             </Route>
       </Router>
       </div>
