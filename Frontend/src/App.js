@@ -5,7 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './Components/Login';
 import SIgnup from './Components/SIgnup';
 import Forget from './Components/Forget';
