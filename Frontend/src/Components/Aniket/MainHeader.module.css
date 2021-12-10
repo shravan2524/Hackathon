@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main-header{
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+}
+
+.main-header a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    list-style: none;
+}
+
+.nav-list_item{
+    margin: 0 .7rem;
+}
+.nav-list_item img{
+    margin: 0 .3rem;
+    height: 2.5rem;
+}

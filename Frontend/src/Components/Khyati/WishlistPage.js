@@ -1,9 +1,7 @@
 import React from 'react';
 import "./Product.css"
 
-export default function MainProductsPage(props) {
-    const {data} = props;
-    console.log("category_products, ", props.detail);
+export default function WishlistPage() {
     const products_mobile = [
         {
             product_id : 'M1',
@@ -82,7 +80,7 @@ export default function MainProductsPage(props) {
             <p><span>{item.product_currency} </span>{item.product_price}</p>
             </div>
             <div>
-            <img src='./images/wishlist.png' className='wishlistImg' alt="wishlist-icon"/>
+            <img src='./images/cart.png' className='wishlistImg' alt="wishlist-icon"/>
             </div>
         </div>
     </div>
@@ -90,7 +88,7 @@ export default function MainProductsPage(props) {
 
 return (
   <div className='main_content'>
-      <h1>Mobiles</h1>
+      <h1>Your Wishlist</h1>
       {listItems}
   </div>
 )

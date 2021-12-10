@@ -92,37 +92,37 @@ border-radius:15px !important;
 .form .register-form {
   display: none;
 }
-.container {
+.containerMain {
   position: relative;
   z-index: 1;
-  max-width: 300px;
+  /* max-width: 300px; */
   margin: 0 auto !important;
 }
-.container:before, .container:after {
+.containerMain:before, .containerMain:after {
   content: "";
   display: block;
   clear: both;
 }
-.container .info {
+.containerMain .info {
   margin: 50px auto;
   text-align: center;
 }
-.container .info h1 {
+.containerMain .info h1 {
   margin: 0 0 15px;
   padding: 0;
   font-size: 36px;
   font-weight: 300;
   color: #1a1a1a;
 }
-.container .info span {
+.containerMain .info span {
   color: #000000;
   font-size: 12px;
 }
-.container .info span a {
+.containerMain .info span a {
   color: #000000;
   text-decoration: none;
 }
-.container .info span .fa {
+.containerMain .info span .fa {
   color: #fea91e;
 }
 body {
@@ -135,7 +135,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;*/     
 }
-.containerMain{
+.containerMainMain{
     display: flex;
     align-items: center;
     justify-content: center;
