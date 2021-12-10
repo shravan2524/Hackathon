@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.MainCartContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    flex-direction: row;
+    height: 100%;
+    margin-top: 60px;
+}
+
+.CartCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 100px;
+    margin: 20px 0px;
+    border: 1px solid #ffffff61;
+    border-radius: 20px;
+    padding: 13px 50px;
+
+}
+
+.Cartcard_img img{
+    width: 110px;
+}
+
+.CartwishlistImg {
+	width: 35px;
+	filter: invert(1);
+    margin-right: 17px;
+    padding: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.CartwishlistImg:hover{
+	filter: invert(0);
+    border-radius: 60%; 
+    background-color: rgb(255, 255, 255);
+
+    transform: scale(1.1);
+}
+
+.CartSummary{
+    border: 1px solid #ffffff61;
+    border-radius: 20px;
+    padding: 13px 50px;
+    margin-top: 20px;
+}
+
+.CartSummary h1{
+    font-weight: 500;
+}
+.CartSummary h2{
+    font-weight: 400;
+}
+
+.summary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:100px;
+    padding: 10px 0;
+}
+.CartAddress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CartAddressButton{
+    width: 50%;
+    padding: 11.5px 0;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: #f1c06f;
+    border: none;
+    color: black;
+    font-size: 1.1rem;
+}
