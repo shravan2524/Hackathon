@@ -1,13 +1,18 @@
 import React from 'react'
 import "./Login.css"
 import { useState } from 'react'
+import { useHistory } from 'react-router';
 
 export default function Login() {
+    const history = useHistory();
     const [email, setemail] = useState("");
     const [password, setpassword] = useState("");
     function submit(){
         console.log(email , password);
-        // e.prevent();
+    }
+    function signupfun(){
+        alert(1);
+        history.push("/signup");
     }
     return (
         <div className="containerMain">      
@@ -23,9 +28,8 @@ export default function Login() {
                 <button onClick={submit}>LOGIN</button>
                 <p className="message"></p>
 
-            <form className="login-form">
-                <button type="button" onclick="window.location.href='signup.html'">SIGN UP</button>
-            </form>
+                {/* <button type="button" onclick={signupfun}>SIGN UP</button> */}
+                <button onClick={signupfun}>Sign up</button>
         </div>
   </div >
   </div>

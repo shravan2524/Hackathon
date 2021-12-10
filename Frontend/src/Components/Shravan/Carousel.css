@@ -8,3 +8,6 @@
   background-color: rgb(94, 93, 93);
   border: 1px solid white;
 }
+.carousel .thumbs.animated{
+  display: none;
+}
