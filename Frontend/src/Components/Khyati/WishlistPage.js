@@ -3,7 +3,7 @@ import "./Product.css";
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 export default function WishlistPage() {
-    const email = "shravanchenna7@gmail.com";
+    const email = "shravanchenna110@gmail.com";
     // const products_mobile = [
     //     {
     //         product_id : 'M1',
