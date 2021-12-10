@@ -1,9 +1,31 @@
 import React from 'react';
-import "./Product.css"
+import "./Product.css";
+import axios from 'axios';
 
 export default function MainProductsPage(props) {
     const {data} = props;
     console.log("category_products, ", props.detail);
+    const email = "shravanchenna7@gmail.com";
+    function addtocart(item, e){
+        console.log("afjhsnkfln");
+        axios.post("http://localhost:5000/api/addtocart", { email, item })
+        .then((e) => {
+            console.log(e.data);
+            alert("Added to Cart");
+        })
+        .catch((err) => console.log(err));
+    }
+    function add_to_wishlist(item, e){
+        // console.log(item , e);
+        // console.log("item");
+        axios.post("http://localhost:5000/api/addtowishlist", {item,email} )
+        .then((ee)=>{
+            console.log(ee.data);
+            alert("Added to Wishlist");
+        })
+        .catch((err) => console.log(err));
+    }
+
     const products_mobile = [
         {
             product_id : 'M1',
@@ -81,10 +103,13 @@ export default function MainProductsPage(props) {
             <h2>{item.product_title}</h2>
             <p><span>{item.product_currency} </span>{item.product_price}</p>
             </div>
-            <div>
-            <img src='./images/wishlist.png' className='wishlistImg' alt="wishlist-icon"/>
+            <div  >
+            <img src='./images/wishlist.png' onClick={(e) => add_to_wishlist(item, e)}  className='wishlistImg' alt="wishlist-icon" />
             </div>
         </div>
+        <div>
+        <button onClick={(e) => addtocart(item, e)}>Add to Cart</button>
+            </div>
     </div>
 );
 
