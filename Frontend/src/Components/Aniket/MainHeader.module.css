@@ -32,14 +32,39 @@
     list-style: none;
 }
 
-.nav-list_item{
+/* .nav-list_item{
     margin: 0 .7rem;
-}
+} */
 .nav-list_item img{
-    margin: 0 .3rem;
+    margin: 0 .8rem;
     height: 2.5rem;
 }
 
 .headerCartIcon{
     filter: invert(1);
 }
+ .nav-list_item{
+    min-width: 50px;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+.nav-list_item:hover{
+	filter: invert(0);
+    border-radius: 30%; 
+    
+
+    transform: scale(1.1);
+}
+.nav-list_item-box:hover .nav-list_item{
+    background: #222222;
+}
+.nav-list-box{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px auto;
+
+}
+
