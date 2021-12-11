@@ -101,3 +101,22 @@ body {
 	margin: 20px 0;
     transition: all 1s linear;
 }
+
+.react-icons {
+	vertical-align: middle;
+	size: 120rem;
+  }
+
+  button{
+	width: 12rem;
+    height: 3rem;
+    border-radius: 100px;
+    background-color: #FF9900;
+    font-size: 1rem;
+	margin-bottom: .6rem;
+  }
+
+  button:hover{
+	  background-color: #ffd000;
+	  cursor: pointer;
+  }

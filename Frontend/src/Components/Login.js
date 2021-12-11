@@ -2,6 +2,7 @@ import React from 'react'
 import "./Login.css"
 import { useState } from 'react'
 import { useHistory } from 'react-router';
+import axios from 'axios';
 
 export default function Login() {
     const history = useHistory();
@@ -9,9 +10,15 @@ export default function Login() {
     const [password, setpassword] = useState("");
     function submit(){
         console.log(email , password);
+        axios.post("http://localhost:5000/api/login", { email , password })
+      .then((e) => {
+          alert(e.data);
+      })
+      .catch((err) => console.log(err));
     }
+
     function signupfun(){
-        alert(1);
+        // alert(1);
         history.push("/signup");
     }
     return (
@@ -29,7 +36,7 @@ export default function Login() {
                 <p className="message"></p>
 
                 {/* <button type="button" onclick={signupfun}>SIGN UP</button> */}
-                <button onClick={signupfun}>Sign up</button>
+                <button onClick={signupfun}>SIGN UP</button>
         </div>
         </div>
         </div>
