@@ -15,6 +15,7 @@ import Wishlist from './Components/Khyati/WishlistPage';
 import ProductDs from './Components/Aniket/ProductDs';
 import MainHeader from './Components/Aniket/MainHeader';
 import Cart from './Components/Khyati/Cart'
+import Orders from './Components/Aniket/Orders'
 
 export default function App() {
   return (
@@ -40,6 +41,9 @@ export default function App() {
             <Route exact path='/Cart'>
             <Cart />
             </Route>
+          <Route exact path='/orders'>
+            <Orders />
+          </Route>
       </Router>
       </div>
   )

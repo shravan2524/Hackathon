@@ -42,10 +42,10 @@ export default function MainHeader(){
         <div className='side-text'>
           <ul className={styles['nav-list']}>
             <div className={styles['dropdown']}>
-  <button className={styles['dropbtn']}>Droadadpdown</button>
+  <img style={{width:"30px", height : "30px"}} src='/images/Account_icon.png' alt="Account" />
   <div className={styles['dropdown-content']}>
     <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
+    <a href="#">Link 2</a>  
     <a href="#">Link 3</a>
   </div>
 </div>
@@ -60,18 +60,18 @@ export default function MainHeader(){
                 </li> */}
               <li onMouseEnter={(e) => onHover(1)}
       onMouseLeave={(e) => onLeave(1)} className={styles['nav-list_item']}><a href="/wishlist"><img src='/images/heart.png' alt="Wishlist" /></a></li>
-              <li>{
+              {/* <li>{
                 hover1
                 ?<div>Wishlist</div>
                 :null
-                }</li>
+                }</li> */}
               <li onMouseEnter={(e) => onHover(2)}
-      onMouseLeave={(e) => onLeave(2)} className={styles['nav-list_item']}><a href="/"><img src="/images/cart.png" className={styles['headerCartIcon']} alt="Cart"/></a></li>          
-              <li>{
+      onMouseLeave={(e) => onLeave(2)} className={styles['nav-list_item']}><a href="/"><img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="Cart"/></a></li>          
+              {/* <li>{
                 hover2
                 ?<div>Cart</div>
                 :null
-                }</li>
+                }</li> */}
               </ul>
         </div>
         </div>

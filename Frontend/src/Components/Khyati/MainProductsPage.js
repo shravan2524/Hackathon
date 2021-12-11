@@ -1,11 +1,13 @@
 import React from 'react';
 import "./Product.css";
 import axios from 'axios';
+import Modal from '../UI/Modal';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiFillHeart } from 'react-icons/ai';
 import { useState, useEffect } from 'react';
 
 export default function MainProductsPage(props) {
+    const [msg, setMsg] = useState();
     const {data} = props;
     console.log("category_products, ", props.detail);
     const email = "shravanchenna110@gmail.com";
@@ -108,7 +110,12 @@ export default function MainProductsPage(props) {
         axios.post("http://localhost:5000/api/addtocart", { email, item })
         .then((e) => {
             console.log(e.data);
-            alert("Added to Cart");
+            console.log(item);
+            // alert("Added to Cart");
+            setMsg({
+                title:'Sucess',
+                message:`${item.product_title} Added to Cart`
+            })
         })
         .catch((err) => console.log(err));
     }
@@ -188,8 +195,19 @@ export default function MainProductsPage(props) {
     </div>
 );
 
+const msgHandler=()=>{
+    setMsg(null);
+}
+
 return (
   <div className='main_content'>
+      {msg &&
+      <Modal 
+        title={msg.title}
+        message={msg.message}
+        onConfirm={msgHandler}
+      />
+      }
       <h1>Mobiles</h1>
       {listItems}
   </div>
