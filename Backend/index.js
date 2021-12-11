@@ -9,6 +9,7 @@ const path = require('path');
 
 const port = process.env.PORT || 5000;
 var wishlist = require("./Models/Wishlist");
+var user = require("./Models/Users");
 
 mongoose.connect('mongodb+srv://shravan:ravilata@cluster0.yyer7.mongodb.net/Hackathon?retryWrites=true&w=majority', {
     useNewUrlParser: true,
@@ -255,5 +256,41 @@ app.post("/api/removefromcart", (req, res) => {
         })
         .catch((err) => console.log(err));
 })
+
+app.post("/api/signup", (req, res) => {
+    console.log(req.body);
+
+    let newUser = new user({
+        email: req.body.email,
+        name: req.body.name,
+        password : req.body.password,
+    })
+
+    let query = {email : req.body.email};
+
+    user.findOne(query)
+    .then((e)=>{
+        console.log(e);
+        if(e){
+            console.log("email already register");
+            res.send("email already register")
+        }
+        else{
+            console.log("email not register");
+            newUser.save()
+            .then((e)=>{
+                console.log("Added succesfully");
+                res.send("Added succesfully");
+            })
+            .catch((err) => console.log(err));
+        }
+    })
+    .catch((err) => console.log(err));
+
+    console.log(newUser);
+
+})
+
+
 
 app.listen(port, () => console.log('server running..'));
