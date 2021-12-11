@@ -63,3 +63,40 @@ hr{
     width: 6rem;
     margin-right: 2rem;
 }
+
+.details-container{
+    width: 100%;
+}
+
+.pd-container{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+@media (max-width:40rem){
+    .main-container{
+        width: 100%;
+    }
+
+    .main-orderbox>h1{
+        font-size: 2rem;
+    }
+
+    .list-item{
+        flex-direction: column;
+    }
+
+    .details-container>h2{
+        font-size: 1.5rem;
+        margin: .5rem 0;
+    }
+
+    .details-container h3,.details-container small{
+        font-size: 1.5rem;
+    }
+
+    .pd-container{
+        justify-content: flex-start;
+    }
+}

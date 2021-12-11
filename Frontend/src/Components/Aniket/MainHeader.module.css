@@ -35,7 +35,7 @@
 /* .nav-list_item{
     margin: 0 .7rem;
 } */
-.nav-list_item img{
+.nav-list_item img,.dropdown>img{
     margin: 0 .8rem;
     height: 2.5rem;
 }
