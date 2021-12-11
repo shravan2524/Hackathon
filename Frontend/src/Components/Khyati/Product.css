@@ -113,6 +113,7 @@ body {
     border-radius: 100px;
     background-color: #FF9900;
     font-size: 1rem;
+	margin-bottom: .6rem;
   }
 
   button:hover{
