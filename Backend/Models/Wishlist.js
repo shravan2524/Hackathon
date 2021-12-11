@@ -18,6 +18,7 @@ const wish = new Schema({
     price : String,
     currency : String,
     description : String,
+    wishlist : Boolean,
     _id : String,
     default : 0
 })

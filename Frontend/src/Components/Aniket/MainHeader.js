@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-
+  
 
 import styles from './MainHeader.module.css';
 export default function MainHeader(){
@@ -41,27 +41,37 @@ export default function MainHeader(){
         <div className='nav-list-box'>
         <div className='side-text'>
           <ul className={styles['nav-list']}>
-              <li onMouseEnter={(e) => onHover(0)}
+            <div className={styles['dropdown']}>
+  <img style={{width:"30px", height : "30px"}} src='/images/Account_icon.png' alt="Account" />
+  <div className={styles['dropdown-content']}>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>  
+    <a href="#">Link 3</a>
+  </div>
+</div>
+              {/* <li onMouseEnter={(e) => onHover(0)}
       onMouseLeave={(e) => onLeave(0)} className={styles['nav-list_item']}><a href="/"><img src='/images/Account_icon.png' alt="Account" /></a></li>
-              {
+          <li className='hovertext'>
+                {
                 hover
-                ?<div style={{position : "relative", top:"10px"}}>Profile</div>
+                ?<div>Profile</div>
                 :null
                 }
+                </li> */}
               <li onMouseEnter={(e) => onHover(1)}
       onMouseLeave={(e) => onLeave(1)} className={styles['nav-list_item']}><a href="/wishlist"><img src='/images/heart.png' alt="Wishlist" /></a></li>
-              <li>{
+              {/* <li>{
                 hover1
                 ?<div>Wishlist</div>
                 :null
-                }</li>
+                }</li> */}
               <li onMouseEnter={(e) => onHover(2)}
-      onMouseLeave={(e) => onLeave(2)} className={styles['nav-list_item']}><a href="/"><img src="/images/cart.png" className={styles['headerCartIcon']} alt="Cart"/></a></li>          
-              <li>{
+      onMouseLeave={(e) => onLeave(2)} className={styles['nav-list_item']}><a href="/"><img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="Cart"/></a></li>          
+              {/* <li>{
                 hover2
                 ?<div>Cart</div>
                 :null
-                }</li>
+                }</li> */}
               </ul>
         </div>
         </div>

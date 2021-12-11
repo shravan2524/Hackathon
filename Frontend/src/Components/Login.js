@@ -11,7 +11,7 @@ export default function Login() {
         console.log(email , password);
     }
     function signupfun(){
-        alert(1);
+        // alert(1);
         history.push("/signup");
     }
     return (
@@ -29,7 +29,7 @@ export default function Login() {
                 <p className="message"></p>
 
                 {/* <button type="button" onclick={signupfun}>SIGN UP</button> */}
-                <button onClick={signupfun}>Sign up</button>
+                <button onClick={signupfun}>SIGN UP</button>
         </div>
   </div >
   </div>
