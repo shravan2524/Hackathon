@@ -269,7 +269,7 @@ export default function Maindashboard() {
 
     return (
         <>
-            <div style={{ width: "90%" }}>
+            <div style={{ width: "90%", marginTop:'4rem' }}>
                 <div style={{height:"20rem"}}  >
                     <Carous />
                 </div>

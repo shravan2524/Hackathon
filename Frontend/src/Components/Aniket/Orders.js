@@ -42,14 +42,20 @@ const Orders = () => {
            <ul className={styles['list-items']}>
                 {tempOrders.map(item=>{
                     return(
+						
                         <li className={styles['list-item']}>
                             <img src={item.product_image} alt="" />
                             <div className={styles['details-container']}>
                                 <h2>{item.product_title}</h2>
                                 <hr />
-                                <h3><small>price:</small>&#x20B9; {item.product_price}</h3>
+                                <h3><small>price:</small> &#x20B9; {item.product_price}</h3>
+								<div className={styles["pd-container"]}>
+								<small>Ordered on: </small>
+								</div>
                             </div>
+				
                         </li>
+						
                     );
                 })}
            </ul>

@@ -80,7 +80,7 @@ border: radius 10px !important;
 .form .register-form {
   display: none;
 }
-.container {
+/* .container {
   position: relative;
   z-index: 1;
   max-width: 200px !important;
@@ -112,7 +112,7 @@ border: radius 10px !important;
 }
 .container .info span .fa {
   color: #fea91e;
-}
+} */
 body {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(right, #222222, #222222);
