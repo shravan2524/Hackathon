@@ -66,7 +66,7 @@ export default function MainHeader(){
                 :null
                 }</li> */}
               <li onMouseEnter={(e) => onHover(2)}
-      onMouseLeave={(e) => onLeave(2)} className={styles['nav-list_item']}><a href="/"><img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="Cart"/></a></li>          
+      onMouseLeave={(e) => onLeave(2)} className={styles['nav-list_item']}><a href="/cart"><img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="Cart"/></a></li>          
               {/* <li>{
                 hover2
                 ?<div>Cart</div>

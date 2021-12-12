@@ -13,12 +13,17 @@ export default function Login() {
         axios.post("http://localhost:5000/api/login", { email , password })
       .then((e) => {
           alert(e.data);
+          if(e.data === "Invalid Email Id / Password"){
+            window.location.reload()
+          }
+          else{
+              history.push("/");
+          }
       })
       .catch((err) => console.log(err));
     }
 
     function signupfun(){
-        // alert(1);
         history.push("/signup");
     }
     return (
