@@ -6,9 +6,9 @@
   background-size: cover;
 }*/
 
-.login-page {
+.forgot-page {
   width: 360px;
-  padding: 8% 0 0;
+  padding: 60% 0 0;
   margin: auto;
 
 }
@@ -27,33 +27,27 @@
   font-family: FontAwesome, "Roboto", sans-serif;
   outline: 0;
   background: #f1c06f;
-  width: 50% !important;
+  width: 65% !important;
   border: 0;
-  margin: 0 0 5px !important;
+  margin: 0 0 6px !important;
   padding: 6px !important;
   box-sizing: border-box;
   font-size: 12px !important;
 border-radius:6px !important;
   
 }
-.form a {
-  font-family: FontAwesome, "Roboto", sans-serif;
-  font-size: 10px;
-  text-align: center;
-  color: #1a1a1a;
-}
 .form button {
   font-family: "Titillium Web", sans-serif;
   font-size: 12px !important;
   font-weight: bold;
-  letter-spacing: .1em !important;
+  letter-spacing: .005em !important;
   outline: 0;
   background: #fea91e;
-  width: 30% ! important;
+  width: 50% ! important;
   border: 0;
 border-radius:15px !important;
   margin: 0px 0px 3px !important;
-  padding: 6px !important;
+  padding: 8px !important;
   color: #FFFFFF;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -92,37 +86,37 @@ border-radius:15px !important;
 .form .register-form {
   display: none;
 }
-.containerMain {
+.container {
   position: relative;
   z-index: 1;
-  /* max-width: 300px; */
+  max-width: 300px;
   margin: 0 auto !important;
 }
-.containerMain:before, .containerMain:after {
+.container:before, .container:after {
   content: "";
   display: block;
   clear: both;
 }
-.containerMain .info {
+.container .info {
   margin: 50px auto;
   text-align: center;
 }
-.containerMain .info h1 {
+.container .info h1 {
   margin: 0 0 15px;
   padding: 0;
   font-size: 36px;
   font-weight: 300;
   color: #1a1a1a;
 }
-.containerMain .info span {
+.container .info span {
   color: #000000;
   font-size: 12px;
 }
-.containerMain .info span a {
+.container .info span a {
   color: #000000;
   text-decoration: none;
 }
-.containerMain .info span .fa {
+.container .info span .fa {
   color: #fea91e;
 }
 body {
@@ -135,9 +129,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;*/     
 }
-.containerMainMain{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.containerMain{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 
 }

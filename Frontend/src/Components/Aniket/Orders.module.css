@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #222222;
+	color: white;
+	position: relative;
+    font-family: 'Lato';
+}
+
+hr{
+    width: 100%;
+    color: white;
+}
+
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 6rem;
+}
+
+
+
+.main-orderbox{
+    display: flex;
+    flex-direction: column;
+    border:5px white solid;
+    border-radius: 20px;
+    width: 80%;
+    align-items: center;
+}
+
+.main-orderbox>h1{
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+.list-items{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item{
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    /* border-top: white 1px solid; */
+    border-bottom: white 1px solid;
+    width: 100%;
+    padding: 2rem;
+}
+
+.list-items img{
+    width: 6rem;
+    margin-right: 2rem;
+}
+
+.details-container{
+    width: 100%;
+}
+
+.pd-container{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+@media (max-width:40rem){
+    .main-container{
+        width: 100%;
+    }
+
+    .main-orderbox>h1{
+        font-size: 2rem;
+    }
+
+    .list-item{
+        flex-direction: column;
+    }
+
+    .details-container>h2{
+        font-size: 1.5rem;
+        margin: .5rem 0;
+    }
+
+    .details-container h3,.details-container small{
+        font-size: 1.5rem;
+    }
+
+    .pd-container{
+        justify-content: flex-start;
+    }
+}

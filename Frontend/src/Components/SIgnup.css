@@ -2,7 +2,7 @@
 
 .login-page {
   width: 360px;
-  padding: 8% 0 0;
+  padding: 60% 0 0;
   margin: auto;
 
 }
@@ -10,21 +10,21 @@
   position: relative;
   z-index: 1;
   background: #4a4b4b;
-  max-width: 100%;
+  max-width: 200% !important;
   margin: 0 auto 100px;
-  padding: 45px;
+  padding: 60px;
   text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24) !important;
   
 }
 .form input {
   font-family: FontAwesome, "Roboto", sans-serif;
   outline: 0;
   background: #f1c06f;
-  width: 100%;
+  width: 60% !important;
   border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
+  margin: 0 0 6px !important;
+  padding: 8px !important;
   box-sizing: border-box;
   font-size: 14px;
 border-radius:10px;
@@ -32,16 +32,16 @@ border-radius:10px;
 }
 .form button {
   font-family: "Titillium Web", sans-serif;
-  font-size: 14px;
+  font-size: 9px !important;
   font-weight: bold;
   letter-spacing: .1em;
   outline: 0;
   background: #fea91e;
-  width: 100%;
+  width: 50% !important;
   border: 0;
-border-radius:30px;
-  margin: 0px 0px 8px;
-  padding: 15px;
+border: radius 10px !important; 
+  margin: 0px 0px 3px !important;
+  padding: 10px !important;
   color: #FFFFFF;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -52,19 +52,19 @@ border-radius:30px;
 }
 .form button:hover,.form button:focus {
   background: #000000;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
   transform: translateY(-4px);
 }
 .form button:active {
   transform: translateY(2px);
-  box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .form .message {
   
-  margin: 6px 6px;
+  margin: 3px 3px !important;
   color: #808080;
-  font-size: 11px;
+  font-size: 10px !important;
   text-align: center;
   font-weight: bold;
   font-style: normal;
@@ -80,15 +80,15 @@ border-radius:30px;
 .form .register-form {
   display: none;
 }
-.container {
+/* .container {
   position: relative;
   z-index: 1;
-  /* max-width: 300px; */
+  max-width: 200px !important;
   margin: auto;
 }
 .container:before, .container:after {
   content: "";
-  display: block;
+  display: box;
   clear: both;
 }
 .container .info {
@@ -112,7 +112,7 @@ border-radius:30px;
 }
 .container .info span .fa {
   color: #fea91e;
-}
+} */
 body {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(right, #222222, #222222);

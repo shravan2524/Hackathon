@@ -1,34 +1,39 @@
 import React from 'react'
 import "./SIgnup.css"
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 export default function SIgnup() {
-    return (
+
+    const [email, setemail] = useState("");
+    const [password, setpassword] = useState("");
+    const [confirmpassword, setconfirmpassword] = useState("");
+    const [name, setname] = useState("");
+
+  function submit(e){
+    if(password === confirmpassword){
+      axios.post("http://localhost:5000/api/signup", { email, name, password })
+      .then((e) => {
+          alert(e.data);
+      })
+      .catch((err) => console.log(err));
+    }
+    else{
+      alert("Password doesn't match");
+    }
+  }
+
+    return (  
         <div className="containerMain">
         <div className="login-page">
         <div className="form">
-          <form>
-            {/* <lottie-player
-            src="https://assets4.lottiefiles.com/datafiles/XRVoUu3IX4sGWtiC3MPpFnJvZNq7lVWDCa8LSqgS/profile.json"
-              background="transparent"
-              speed="1"
-              style="justify-content: center"
-              loop
-              autoplay
-            ></lottie-player> */}
-            <input type="text" placeholder="full name" />
-            <input type="text" placeholder="email address" />
-            <input type="text" placeholder="pick a username" />
-            <input type="password" id="password" placeholder="set a password" />
-            <i className="fas fa-eye" onclick="show()"></i>
+            <input type="text" value={name} onChange={(e) => setname(e.target.value)} placeholder="full name" />
+            <input type="text" value={email} onChange={(e) => setemail(e.target.value)}  placeholder="email address" />
+            <input type="password" value={password} onChange={(e) => setpassword(e.target.value)} id="password" placeholder="set a password" />
+            <input type="password" value={confirmpassword} onChange={(e) => setconfirmpassword(e.target.value)} placeholder="Confirm password" />
             <br/>
             <br/>
-          </form>
-
-          <form className="login-form">
-            <button type="button" onclick="window.location.href='login.html'">
-              SIGN UP
-            </button>
-          </form>
+            <button onClick={submit}>Sign up</button>
         </div>
       </div>
       </div>

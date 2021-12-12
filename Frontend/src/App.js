@@ -8,13 +8,15 @@ import {
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './Components/Login';
 import SIgnup from './Components/SIgnup';
-import Forget from './Components/Forget';
+// import Forget from './Components/Forget';
 import Maindashboard from './Components/Maindashboard';
 import MainProductsPage from './Components/Khyati/MainProductsPage';
 import Wishlist from './Components/Khyati/WishlistPage';
 import ProductDs from './Components/Aniket/ProductDs';
 import MainHeader from './Components/Aniket/MainHeader';
 import Cart from './Components/Khyati/Cart'
+import Orders from './Components/Aniket/Orders'
+// import styles from './Main.module.css'
 
 export default function App() {
   return (
@@ -40,6 +42,9 @@ export default function App() {
             <Route exact path='/Cart'>
             <Cart />
             </Route>
+          <Route exact path='/orders'>
+            <Orders />
+          </Route>
       </Router>
       </div>
   )
