@@ -14,9 +14,9 @@ export default function Cart() {
   const [modal, setmodal] = useState(false);
   const history = useHistory();
   const ok = localStorage.getItem('isLogin');
-  if(!ok){
-      history.push("/login");
-  }
+  if(ok==0){
+    history.push("/login");
+}
 
   function closemodal(){
     setmodal(false);

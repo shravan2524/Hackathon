@@ -6,7 +6,8 @@ import { useHistory } from 'react-router';
 export default function Maindashboard() {
     const history = useHistory();
     const ok = localStorage.getItem('isLogin');
-    if(!ok){
+    // alert(ok);
+    if(ok==0){
         history.push("/login");
     }
     const products_mobile = [

@@ -20,9 +20,9 @@ export default function Login() {
             window.location.reload()
           }
           else{
-              history.push("/");
               localStorage.setItem('email', email);
               localStorage.setItem('isLogin', 1);
+              history.push("/");
           }
       })
       .catch((err) => console.log(err));

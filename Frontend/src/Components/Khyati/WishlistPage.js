@@ -9,9 +9,9 @@ export default function WishlistPage() {
   const email = "shitalbokade5@gmail.com";
   const history = useHistory();
   const ok = localStorage.getItem('isLogin');
-  if(!ok){
-      history.push("/login");
-  }
+  if(ok==0){
+    history.push("/login");
+}
   // const products_mobile = [
   //     {
   //         product_id : 'M1',
