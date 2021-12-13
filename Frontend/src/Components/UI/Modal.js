@@ -8,11 +8,18 @@ const Backdrop=(props)=>{
 };
 
 const ModalOverlay=props=>{
+
+
   return (
     <div className={classes.modal}>
         <header className={classes.header}>
           <h2>{props.title}</h2>
         </header>
+        {
+          props.delivery
+          ? <div>haidhadjan</div>
+          : null
+        }
         <div className={classes.content}>
           <p>{props.message}</p>
         </div>
