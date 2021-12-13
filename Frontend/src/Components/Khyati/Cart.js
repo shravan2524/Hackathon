@@ -101,6 +101,13 @@ export default function Cart() {
       .catch((err) => console.log(err));
   }
 
+
+ 
+
+  // function CartPayment(item,e){
+  //   console.log(item);
+  // }
+
   const msgHandler=()=>{
     setMsg(null);
 }
@@ -135,6 +142,9 @@ export default function Cart() {
       </div>
     </div>
   ));
+
+  
+
   return (
     <div className="MainCartContainer">
       {msg && (

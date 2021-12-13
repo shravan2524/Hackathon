@@ -76,7 +76,7 @@ export default function MainHeader() {
                   onMouseLeave={(e) => onLeave(2)}
                   className={styles["nav-list_item"]}
                 >
-                  <a href="/">
+                  <a href="/Cart">
                     <img
                       src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg"
                       alt="Cart"

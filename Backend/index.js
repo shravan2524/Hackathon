@@ -303,8 +303,8 @@ app.post("/api/login", (req, res) => {
 
         }
         else{
-            console.log("Invalid Email Id");
-            res.send("Invalid Email Id")
+            console.log("Invalid Email Id / Password");
+            res.send("Invalid Email Id / Password")
 
         }
     }
