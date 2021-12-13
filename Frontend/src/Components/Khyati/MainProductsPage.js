@@ -5,12 +5,19 @@ import Modal from '../UI/Modal';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiFillHeart } from 'react-icons/ai';
 import { useState, useEffect } from 'react';
+import { useHistory } from 'react-router';
 
 export default function MainProductsPage(props) {
     const [msg, setMsg] = useState();
     const {data} = props;
     console.log("category_products, ", props.detail);
     const email = "shitalbokade5@gmail.com";
+    const history = useHistory();
+  const ok = localStorage.getItem('isLogin');
+  if(!ok){
+      history.push("/login");
+  }
+
     const [products, setproducts] = useState([ {
         product_id : 'M1',
         product_title :'Apple iPhone 11',

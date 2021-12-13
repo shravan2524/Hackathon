@@ -19,17 +19,18 @@ import Orders from './Components/Aniket/Orders'
 // import styles from './Main.module.css'
 
 export default function App() {
+  const ok = localStorage.getItem('isLogin');
   return (
     <div className="container">
       <MainHeader />
       <Router>
-          <Route exact path="/" component={Maindashboard} />
-          <Route exact path="/signup">
+      <Route exact path="/signup">
             <SIgnup />
           </Route>
           <Route exact path="/Login">
             <Login />
           </Route>
+          <Route exact path="/" component={Maindashboard} />
           <Route exact path="/category">
             <MainProductsPage />
           </Route>
@@ -45,7 +46,6 @@ export default function App() {
           <Route exact path='/orders'>
             <Orders />
           </Route>
-         
       </Router>
       </div>
   )

@@ -1,11 +1,17 @@
 import React from "react";
 import { useState } from "react";
-
+import { useHistory } from 'react-router';
 import styles from "./MainHeader.module.css";
 export default function MainHeader() {
   const [hover, setHover] = useState(false);
   const [hover1, setHover1] = useState(false);
   const [hover2, setHover2] = useState(false);
+  const history = useHistory();
+  function logout(){
+    localStorage.removeItem('email');
+      localStorage.setItem('isLogin', 0);
+      history.push("/login");
+  }
   const onHover = (x) => {
     if (x == 0) {
       setHover(true);
@@ -88,9 +94,14 @@ export default function MainHeader() {
                 ?<div>Cart</div>
                 :null
                 }</li> */}
+                <div>
+            <button onClick={logout}>Log out</button>
+          </div>
               </ul>
             </div>
+
           </div>
+          
         </div>
       </nav>
     </header>

@@ -2,8 +2,13 @@ import React from 'react'
 import { Carousel } from 'react-responsive-carousel';
 import Carous from './Shravan/Carous';
 import Categorycard from './Shravan/Categorycard';
-
+import { useHistory } from 'react-router';
 export default function Maindashboard() {
+    const history = useHistory();
+    const ok = localStorage.getItem('isLogin');
+    if(!ok){
+        history.push("/login");
+    }
     const products_mobile = [
         [
             {
