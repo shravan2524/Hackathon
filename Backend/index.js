@@ -40,6 +40,8 @@ app.post("/api/addtowishlist", (req, res) => {
         wish: wishs,
         cart: [],
         order : [],
+        order: [],
+
     })
     let query = { email: useremail };
     wishlist.findOne(query)
@@ -177,6 +179,7 @@ app.post("/api/addtocart", (req, res) => {
         wish: [],
         cart: cart,
         order : [],
+        order: [],
     })
     let tempcart = [];
     let moveingitem = req.body.item;
@@ -316,8 +319,11 @@ app.post("/api/login", (req, res) => {
 
 })
 
+app.post("/api/orders", (req, res) => {
+    console.log(req.body);
 
 
 
 
+})
 app.listen(port, () => console.log('server running..'));

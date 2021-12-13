@@ -10,7 +10,7 @@ export default function MainProductsPage(props) {
     const [msg, setMsg] = useState();
     const {data} = props;
     console.log("category_products, ", props.detail);
-    const email = "shravanchenna110@gmail.com";
+    const email = "shitalbokade5@gmail.com";
     const [products, setproducts] = useState([ {
         product_id : 'M1',
         product_title :'Apple iPhone 11',

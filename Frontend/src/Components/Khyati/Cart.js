@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 export default function Cart() {
 	const [msg, setMsg] = useState();
   const [products_mobile, setproducts_mobile] = useState([]);
-  const [email, setemail] = useState("shravanchenna110@gmail.com");
+  const [email, setemail] = useState("shitalbokade5@gmail.com");
   const [price, setprice] = useState();
   const [address, setaddress] = useState("");
   const [modal, setmodal] = useState(false);

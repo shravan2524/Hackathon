@@ -4,7 +4,7 @@ import Modal from "../UI/Modal";
 import axios from "axios";
 import { useState, useEffect } from "react";
 export default function WishlistPage() {
-  const email = "shravanchenna110@gmail.com";
+  const email = "shitalbokade5@gmail.com";
   // const products_mobile = [
   //     {
   //         product_id : 'M1',
