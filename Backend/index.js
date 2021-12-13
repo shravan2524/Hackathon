@@ -39,6 +39,7 @@ app.post("/api/addtowishlist", (req, res) => {
         email: useremail,
         wish: wishs,
         cart: [],
+        order : [],
     })
     let query = { email: useremail };
     wishlist.findOne(query)
@@ -175,6 +176,7 @@ app.post("/api/addtocart", (req, res) => {
         email: req.body.email,
         wish: [],
         cart: cart,
+        order : [],
     })
     let tempcart = [];
     let moveingitem = req.body.item;
