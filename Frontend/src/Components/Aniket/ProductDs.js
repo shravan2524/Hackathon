@@ -5,9 +5,9 @@ import { useHistory } from 'react-router';
 const ProductDs = () => {
   const history = useHistory();
   const ok = localStorage.getItem('isLogin');
-  if(!ok){
-      history.push("/login");
-  }
+  if(ok==0){
+    history.push("/login");
+}
   return (
     <div className={styles["main-container"]}>
       <img src="./images/Mobile_21.png" alt="" />

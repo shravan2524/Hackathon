@@ -10,7 +10,9 @@ export default function MainHeader() {
   function logout(){
     localStorage.removeItem('email');
       localStorage.setItem('isLogin', 0);
-      history.push("/login");
+      // history.push("/login");
+      window.location.reload();
+
   }
   const onHover = (x) => {
     if (x == 0) {
