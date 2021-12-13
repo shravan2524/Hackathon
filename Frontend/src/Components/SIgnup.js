@@ -2,19 +2,20 @@ import React from 'react'
 import "./SIgnup.css"
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import { useHistory } from 'react-router';
 export default function SIgnup() {
 
     const [email, setemail] = useState("");
     const [password, setpassword] = useState("");
     const [confirmpassword, setconfirmpassword] = useState("");
     const [name, setname] = useState("");
-
+    const history = useHistory();
   function submit(e){
     if(password === confirmpassword){
       axios.post("http://localhost:5000/api/signup", { email, name, password })
       .then((e) => {
           alert(e.data);
+          history.push("/login");
       })
       .catch((err) => console.log(err));
     }
