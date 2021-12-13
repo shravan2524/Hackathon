@@ -133,7 +133,7 @@ export default function Cart() {
           </div>
           <div className="SummaryContent summary">
             <h2>Total MRP (Incl. of taxes) </h2>
-            <p>{price}</p>
+            <p>₹{price}</p>
           </div>
           <div className="SummaryContent_deliveryfee summary">
             <h2>Delivery Fee </h2>
@@ -141,17 +141,20 @@ export default function Cart() {
           </div>
           <div className="SummaryContent_total summary">
             <h2>Total </h2>
-            <p>{price + 100}</p>
+            <p>₹{price + 100}</p>
           </div>
           <div className="CartAddress">
-            <input type="text" value={address} onChange={(e) => setaddress(e.target.value)} />
+            <h2>Address </h2>
+            <input type="text" value={address} onChange={(e) => setaddress(e.target.value)} placeholder="Enter Your Address"/>
           </div>
+          <div className="PayButtonContainer">
           <button onClick={(e) => setmodal(true)}>Pay and order</button>
           {
             modal
             ? <Modal title="Success" onConfirm={closemodal} message="Your order has been placed" />
             : null
           }
+          </div>
         </div>
       ) : null}
     </div>

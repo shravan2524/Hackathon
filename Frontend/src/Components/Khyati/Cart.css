@@ -71,8 +71,17 @@
 .CartAddress{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+}
+
+.PayButtonContainer{
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
+
 .CartAddressButton{
     width: 50%;
     padding: 11.5px 0;
@@ -83,3 +92,13 @@
     color: black;
     font-size: 1.1rem;
 }
+
+.CartAddress input{
+    padding: 10px 5px;
+    background-color: #222222;
+    color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+    font-size: medium;
+}
+
