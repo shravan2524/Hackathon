@@ -21,6 +21,8 @@ export default function Login() {
           }
           else{
               history.push("/");
+              localStorage.setItem('email', email);
+              localStorage.setItem('isLogin', 1);
           }
       })
       .catch((err) => console.log(err));

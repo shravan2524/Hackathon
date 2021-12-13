@@ -3,6 +3,7 @@ import "./Cart.css";
 import axios from "axios";
 import Modal from "../UI/Modal";
 import { useState, useEffect } from "react";
+import { useHistory } from 'react-router';
 
 export default function Cart() {
 	const [msg, setMsg] = useState();
@@ -11,6 +12,11 @@ export default function Cart() {
   const [price, setprice] = useState();
   const [address, setaddress] = useState("");
   const [modal, setmodal] = useState(false);
+  const history = useHistory();
+  const ok = localStorage.getItem('isLogin');
+  if(!ok){
+      history.push("/login");
+  }
 
   function closemodal(){
     setmodal(false);
