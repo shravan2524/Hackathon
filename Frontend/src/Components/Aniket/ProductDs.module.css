@@ -87,3 +87,24 @@ button.addtocart{
     background-color: #f5ce00;
     font-size: 1rem;
 }
+
+      @media screen and (max-width:425px){
+        .main-container{
+            flex-direction: column;
+        }
+        .details-container{
+            width: 50%;
+            
+        }
+        .main-container img{
+            /* width: 20rem; */
+            height: 12rem;
+        }
+        button.addtocart{
+            width: 10rem;
+            
+        }
+        button.buy{
+            width: 10rem;
+        }
+     }
