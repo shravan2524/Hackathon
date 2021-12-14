@@ -109,22 +109,99 @@
    
    
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .CartCard{
-        background-color: chartreuse;
+  @media screen and (max-width:1024px){
+    .MainCartContainer {
+        gap: 20px;
+    }
+    .CartCard {
+       gap: 60px;
     }
 
-}
-
-@media screen and (min-width: 480px) and (max-width: 768px){
-    .CartCard{
-        background-color: red;
+    .CartSummary {
+        margin-right: 20px;
     }
-}
-
-
-@media screen and (min-width: 320px) and (max-width: 480px){
-    .CartCard{
-        background-color: blueviolet;
+    .summary {
+        gap: 60px;
     }
-}
+
+  }
+
+  
+  @media screen and (max-width:768px){
+    .MainCartContainer {
+        grid-gap: 20px;
+        gap: 20px;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  
+  @media screen and (max-width:525px){
+    .CartCard {
+        margin-left: 5px;
+        gap: 30px;
+     }
+ 
+     .CartSummary {
+         margin-right: 5px;
+     }
+
+     .summary {
+        gap: 30px;
+    }
+
+    .CartSummary h1 {
+        font-size: 1.3rem;
+    }
+    .CartSummary h2 {
+        font-size: 1rem;
+    }
+    .CartAddress input {
+        padding: 5px 3px;
+    }  
+    
+    .CartAddress {
+        gap: 20px;
+    }
+    .Cartcard_content h2{
+        font-size: 1.2rem;
+    }
+    .Cartcard_content p{
+        font-size: 0.8rem;
+    }
+    .CartwishlistImg {
+        width: 30px;
+        margin-top: 5px;
+    }
+  }
+
+  @media screen and (max-width:376px){
+    .CartSummary {
+        margin-right: 0px;
+        padding: 8px 10px;
+    }
+    .CartCard {
+        padding: 8px 10px;
+    }
+    .CartSummary h1 {
+        font-size: 1rem;
+    }
+    .CartSummary h2 {
+        font-size: 0.8rem;
+    } 
+    
+    .CartAddress {
+        gap:15px;
+    }
+    .Cartcard_content h2{
+        font-size: 1rem;
+    }
+    .Cartcard_content p{
+        font-size: 0.6rem;
+    }
+    .CartwishlistImg {
+        width: 30px;
+    }
+  }

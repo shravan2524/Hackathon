@@ -138,13 +138,7 @@ export default function WishlistPage() {
             {item.price}
           </p>
         </div>
-        <div>
-          <img
-            src="./images/cart.png"
-            className="wishlistImg"
-            alt="wishlist-icon"
-          />
-        </div>
+        
       </div>
       <div>
         <button onClick={(e) => remove(item, e)}>Remove from Wishlist</button>

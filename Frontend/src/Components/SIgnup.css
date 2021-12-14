@@ -129,3 +129,13 @@ body {
   justify-content: center;
 
 }
+
+@media screen and (max-width:375px){
+
+  .login-page {
+    width: 300px !important ;
+    padding:40% 0 0 !important ;
+    /* background-color: brown; */
+  }
+
+}

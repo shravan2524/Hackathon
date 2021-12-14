@@ -7,8 +7,8 @@
 }*/
 
 .login-page {
-  width: 360px;
-  padding: 8% 0 0;
+  width: 500px;
+  padding: 30% 0 0 !important; 
   margin: auto;
 
 }
@@ -80,9 +80,6 @@ border-radius:15px !important;
   text-align: center;
   font-weight: bold;
   font-style: normal;
-
-  
-
 }
 .form .message a {
   color: #FFFFFF;
@@ -141,3 +138,15 @@ body {
     justify-content: center;
 
 }
+
+@media screen and (max-width:375px){
+
+  .login-page {
+    width: 300px !important ;
+    padding:40% 0 0 !important ;
+    /* background-color: brown; */
+  }
+
+}
+
+
