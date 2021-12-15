@@ -83,7 +83,7 @@ export default function WishlistPage() {
   function remove(item, e) {
     console.log(item);
     axios
-      .post("https://web-store165.herokuapp.com/api/removefromwishlist", { email, item })
+      .post("https://hackart.herokuapp.com/api/removefromwishlist", { email, item })
       .then((e) => {
         console.log(e.data);
         // alert("Removed from Wishlist");
@@ -98,7 +98,7 @@ export default function WishlistPage() {
   function movetocart(item, e) {
     console.log(item);
     axios
-      .post("https://web-store165.herokuapp.com/api/movetocart", { email, item })
+      .post("https://hackart.herokuapp.com/api/movetocart", { email, item })
       .then((e) => {
         console.log(e.data);
         // alert("Moved to Cart");
@@ -112,7 +112,7 @@ export default function WishlistPage() {
   }
   useEffect(() => {
     axios
-      .post("https://web-store165.herokuapp.com/api/getwishlist", { email })
+      .post("https://hackart.herokuapp.com/api/getwishlist", { email })
       .then((e) => {
         console.log(e.data[0].wish);
         setproducts_mobile(e.data[0].wish);

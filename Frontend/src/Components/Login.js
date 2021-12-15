@@ -13,7 +13,7 @@ export default function Login() {
 
     function submit(){
         console.log(email , password);
-        axios.post("https://web-store165.herokuapp.com/api/login", { email , password })
+        axios.post("https://hackart.herokuapp.com/api/login", { email , password })
       .then((e) => {
           alert(e.data);
           if(e.data === "Invalid Email Id / Password"){
