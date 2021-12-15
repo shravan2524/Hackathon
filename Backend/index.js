@@ -7,6 +7,9 @@ app.use(cors());
 app.use(express.json());
 const path = require('path');
 
+const publicPath = path.join(__dirname, '..', 'public');
+app.use(express.static(publicPath));
+
 const port = process.env.PORT || 5000;
 var wishlist = require("./Models/Wishlist");
 var user = require("./Models/Users");
@@ -20,6 +23,13 @@ const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
     console.log('Database connected');
+});
+
+app.use(express.static(path.join(__dirname, 'build')));
+
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.post("/api/addtowishlist", (req, res) => {
