@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd Frontend && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-install": "npm install --perfix Frontend",
+    "start": "node index.js",
+    "server": "node index.js",
+    "client": "npm start --prefix Frontend",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Frontend && npm run build --prefix Frontend"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "mongoose": "^6.1.1",
+    "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}

@@ -32,7 +32,7 @@ export default function Cart() {
   useEffect(() => {
     console.log("kjhgfxcv");
     axios
-      .post("http://localhost:5000/api/cart", { email })
+      .post("https://web-store165.herokuapp.com/api/cart", { email })
       .then((e) => {
         console.log(e.data);
         setproducts_mobile(e.data);
@@ -44,7 +44,7 @@ export default function Cart() {
 
   function movetowishlist(item, e) {
     axios
-      .post("http://localhost:5000/api/removefromcart", {
+      .post("https://web-store165.herokuapp.com/api/removefromcart", {
         item,
         email,
         movetowishlist: "true",
@@ -65,7 +65,7 @@ export default function Cart() {
   function removefromcart(item, e) {
     console.log(item);
     axios
-      .post("http://localhost:5000/api/removefromcart", {
+      .post("https://web-store165.herokuapp.com/api/removefromcart", {
         item,
         email,
         movetowishlist: "false",

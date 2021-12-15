@@ -12,7 +12,7 @@ export default function SIgnup() {
     const history = useHistory();
   function submit(e){
     if(password === confirmpassword){
-      axios.post("http://localhost:5000/api/signup", { email, name, password })
+      axios.post("https://web-store165.herokuapp.com/api/signup", { email, name, password })
       .then((e) => {
           alert(e.data);
           history.push("/login");
