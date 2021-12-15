@@ -92,7 +92,7 @@ export default function MainProductsPage(props) {
     },]);
 
     useEffect(() => {
-        axios.post("https://web-store165.herokuapp.com/api/wishlist", {email} )
+        axios.post("https://hackart.herokuapp.com/api/wishlist", {email} )
         .then((ee)=>{
             console.log(ee.data, "adnad");
             let temp = [];
@@ -114,7 +114,7 @@ export default function MainProductsPage(props) {
     // setproducts(products_mobile);
     function addtocart(item, e){
         console.log("afjhsnkfln");
-        axios.post("https://web-store165.herokuapp.com/api/addtocart", { email, item })
+        axios.post("https://hackart.herokuapp.com/api/addtocart", { email, item })
         .then((e) => {
             console.log(e.data);
             console.log(item);
@@ -132,7 +132,7 @@ export default function MainProductsPage(props) {
         item.product_wishlist = ok;
         console.log(item , e);
         if(ok===true){
-        axios.post("https://web-store165.herokuapp.com/api/addtowishlist", {item,email} )
+        axios.post("https://hackart.herokuapp.com/api/addtowishlist", {item,email} )
         .then((ee)=>{
             console.log(ee.data, "adnad");
             let temp = [];
@@ -151,7 +151,7 @@ export default function MainProductsPage(props) {
         .catch((err) => console.log(err));
     }
     else{
-        axios.post("https://web-store165.herokuapp.com/api/removefromwishlist", {item,email})
+        axios.post("https://hackart.herokuapp.com/api/removefromwishlist", {item,email})
         .then((ee)=>{
             console.log(ee.data, "adnad");
             let temp = [];
